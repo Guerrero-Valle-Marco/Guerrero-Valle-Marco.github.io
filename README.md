@@ -1,6 +1,6 @@
 # Proyecto página web 
 
-[YouTube](https://www.youtube.com/)
+[desarrolloweb.com]([https://www.youtube.com/](https://desarrolloweb.com/articulos/que-es-un-blog.html)
 
-![Imagen YouTube](https://github.com/Guerrero-Valle-Marco/Guerrero-Valle-Marco.github.io/blob/main/YouTube/CapturaYT.PNG)
+![Imagen desarrolloweb.com]()
 
