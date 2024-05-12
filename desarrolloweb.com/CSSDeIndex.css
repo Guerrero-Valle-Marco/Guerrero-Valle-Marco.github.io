@@ -10,3 +10,53 @@ h1 {
     font-size: 23px;
     line-height: 40px;
 }
+
+img {
+    margin-left: 80%;
+}
+
+#boton-hamburguesa {
+    background-color: #253030;
+    color: #fff;
+    font-size: 24px;
+    font-family: sans-serif;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .Title {
+    background-color: #c9e6fa;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+    color: #404040;
+    margin-bottom: 3px;
+    padding: 1.5em 0;
+}
+
+.Title h1 {
+    font-size: 2em;
+    font-weight: 300;
+    margin-bottom: 4px;
+    margin-top: 0;
+}
+
+.NavExtended {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.NavExtended-content {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+}
