@@ -45,6 +45,10 @@ img {
     flex-direction: column;
 }
 
+body {
+    font-family: Roboto, Trebuchet MS, Lucida Sans Unicode, Lucida Grande, Lucida Sans, Arial, sans-serif;
+    margin: 0;
+}
 
 .NavExtended-content {
     align-items: center;
@@ -53,7 +57,6 @@ img {
     justify-content: space-between;
     margin-top: 15px;
 }
-
 
 .container {
     margin: 0 auto;
