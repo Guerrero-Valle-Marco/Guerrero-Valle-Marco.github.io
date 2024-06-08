@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 29-05-2024 a las 02:52:34
+-- Tiempo de generación: 04-06-2024 a las 03:43:21
 -- Versión del servidor: 10.1.39-MariaDB
 -- Versión de PHP: 7.3.5
 
@@ -163,7 +163,8 @@ ALTER TABLE `canciones`
 -- Indices de la tabla `favoritos`
 --
 ALTER TABLE `favoritos`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `favoritos_ibfk_1` (`usuario_id`);
 
 --
 -- Indices de la tabla `generos`
@@ -181,7 +182,8 @@ ALTER TABLE `memebresias`
 -- Indices de la tabla `playlist`
 --
 ALTER TABLE `playlist`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `playlist_ibfk_1` (`usuario_id`);
 
 --
 -- Indices de la tabla `playlist_canciones`
@@ -257,6 +259,18 @@ ALTER TABLE `usuarios`
 --
 -- Restricciones para tablas volcadas
 --
+
+--
+-- Filtros para la tabla `favoritos`
+--
+ALTER TABLE `favoritos`
+  ADD CONSTRAINT `favoritos_ibfk_1` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id`);
+
+--
+-- Filtros para la tabla `playlist`
+--
+ALTER TABLE `playlist`
+  ADD CONSTRAINT `playlist_ibfk_1` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id`);
 
 --
 -- Filtros para la tabla `usuarios`
