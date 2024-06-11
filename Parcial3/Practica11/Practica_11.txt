@@ -1,0 +1,16 @@
+#1.Obtener el listado del nombre del usuario y la membresía que tienen
+
+SELECT usuarios.nombre; membresia.descripcion FROM usuarios
+INNER JOIN memebresias
+ON usuarios.membresia_id = membresias.id
+
+#2. Obtener el listado de canciones con su genero
+
+SELECT canciones.nombre,generos.nombre FROM canciones 
+INNER JOIN generos
+ON canciones.genero_id = generos.id
+
+#3 Obtener listado de playlists y el nombre de usuario que las creó
+
+comentario:No tenia word mi compu :(
+
