@@ -12,18 +12,75 @@
     <div class="container">
         <div class="row mt-2">
             <div class="col">
-                <h3 class="card" id="grasa">SELECT * FROM alumno</h3>
-                <p id="ketchup">Consulta #1 Obtener el listdado de todos los alumnos</p>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Consulta #1 Obtener el listdado de todos los alumnos
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            SELECT * FROM alumno
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
                 <img src="consulta1.png" alt="" class="img-fluid">
             </div>
         </div>
     </div>
+    <br>
+    <div class="container">
+        <div class="row mt-2">
+            <div class="col">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Consulta #3 Obtener listado (nombre y apellido) de alumnos que tengan becas.
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            SELECT alumno.nombre, alumno.apellido1, alumno.apellido2, alumno.beca FROM alumno WHERE alumno.beca = 'si'
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                <img src="Consulta3.png" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row mt-2">
+            <div class="col">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Consulta #4 Obtener listado de profesores (nombre, apellido) y su numero de contacto.
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            SELECT nombre, apellido1, apellido2, idProfesor FROM profesor; (Todavia falta)
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                <img src="" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <br>
     <footer>
         &copy;Marco Antonio Guerrero Valle
     </footer>
-    <p>
-        Nota:Disculpe profe si no etsa completo mi compañera no tenia compu y le presete la mia un rato
-    </p>
     <script src="js/bootstrap.js"></script>
 </body>
 </html>
