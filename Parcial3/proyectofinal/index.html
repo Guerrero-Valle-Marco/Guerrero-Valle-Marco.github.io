@@ -33,6 +33,32 @@
     </div>
     <br>
     <div class="container">
+      <div class="row mt-2">
+          <div class="col">
+              <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Consulta #2 Obtener el listado de los cursos (nombres) y sus asignaturas correspondientes.
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        SELECT curso.nombreDescriptivo, asignatura.nombre
+                        FROM curso
+                        INNER JOIN asignatura
+                        ON curso.idCurso = asignatura.curso;
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br>
+              <img src="consulta2.png" alt="" class="img-fluid">
+          </div>
+      </div>
+  </div>
+  <br>
+    <div class="container">
         <div class="row mt-2">
             <div class="col">
                 <div class="accordion" id="accordionExample">
@@ -67,13 +93,16 @@
                       </h2>
                       <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            SELECT nombre, apellido1, apellido2, idProfesor FROM profesor; (Todavia falta)
+                          SELECT profesor.nombre, profesor.apellido1, profesor.apellido2, tlfcontactoprof.telefono
+                          FROM profesor
+                          INNER JOIN tlfcontactoprof
+                          ON profesor.idProfesor = tlfcontactoprof.idProfesor;
                         </div>
                       </div>
                     </div>
                   </div>
                   <br>
-                <img src="" alt="" class="img-fluid">
+                <img src="Consulta4.png" alt="" class="img-fluid">
             </div>
         </div>
     </div>
