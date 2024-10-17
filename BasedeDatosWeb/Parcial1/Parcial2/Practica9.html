@@ -6,11 +6,27 @@
     <title>Juego de loteria con JavaScript</title>
     <script src="jquery-3.7.1.min.js"></script>
     <script src="Practica9.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
     <h1 style="color: blueviolet;">La loteria</h1><hr>
-    <div id="carta_activa"></div>
-        <button id="dar_carta" style="color: blueviolet;">Dar carta</button>
+    <div id="carta_activa" style="color: blueviolet;"></div>
+    <button id="dar_carta" style="color: blueviolet;">Dar carta</button>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="row" id="carta1" style="border: 2px solid blueviolet;">
+
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="row" id="carta2" style="border: 2px solid blueviolet;">
+
+                </div>
+            </div>
+        </div>
+    </div>
     <footer style="color: blueviolet;">
         &copy;Marco Antonio Guerrero Valle.
     </footer>
